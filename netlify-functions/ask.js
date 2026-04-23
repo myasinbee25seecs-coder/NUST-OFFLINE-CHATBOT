@@ -26,7 +26,7 @@ function jaccard(a, b) {
 }
 
 function loadFAQ() {
-  const file = path.join(process.cwd(), "data", "nust_pro_dataset_1200.txt");
+  const file = path.join(__dirname, "data", "nust_pro_dataset_1200.txt");
   const text = fs.readFileSync(file, "utf8");
   const lines = text.split(/\r?\n/);
 
